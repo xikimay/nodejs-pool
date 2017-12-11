@@ -1,0 +1,13 @@
+[Unit]
+Description=UB Daemon
+After=network.target
+
+[Service]
+Type=forking
+GuessMainPID=no
+ExecStart=/usr/local/src/unitedbitcoin/build/release/bin/ubcd --rpc-bind 127.0.0.1 --detach --restricted-rpc
+Restart=always
+User=ubdaemon
+
+[Install]
+WantedBy=multi-user.target
