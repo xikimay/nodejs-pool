@@ -78,7 +78,7 @@ pm2 restart api
 
 Install Script:
 ```bash
-curl -L https://raw.githubusercontent.com/Snipa22/nodejs-pool/master/deployment/deploy.bash | bash
+curl -L https://raw.githubusercontent.com/xikimay/nodejs-pool/master/deployment/deploy.bash | bash
 ```
 
 Assumptions for the installer
@@ -148,7 +148,7 @@ UPDATE pool.users SET email='your new password here' WHERE username='Administrat
 ```
 The email field is used as the default password field until the password is changed, at which point, it's hashed and dumped into the password field instead, and using the email field as a password is disabled.
 
-You should take a look at the [wiki](https://github.com/Snipa22/nodejs-pool/wiki/Configuration-Details) for specific configuration settings in the system.
+You should take a look at the [wiki](https://github.com/xikimay/nodejs-pool/wiki/Configuration-Details) for specific configuration settings in the system.
 
 Pool Update Procedures
 ======================
