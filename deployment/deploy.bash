@@ -28,7 +28,10 @@ sudo git clone https://github.com/UnitedBitcoin/UnitedBitcoin.git
 cd UnitedBitcoin
 sudo git checkout
 curl https://raw.githubusercontent.com/xikimay/nodejs-pool/master/deployment/ub_daemon.patch | sudo git apply -v
-sudo cmake .
+sudo ./autogen.sh
+sudo ./configure
+sudo make
+sudo make install
 sudo make -j$(nproc)
 sudo cp ~/nodejs-pool/deployment/ub.service /lib/systemd/system/
 sudo useradd -m ubdaemon -d /home/ubdaemon

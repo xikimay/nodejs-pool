@@ -5,7 +5,6 @@ cd /usr/local/src/UnitedBitcoin
 sudo git checkout .
 sudo git checkout master
 sudo git pull
-sudo git checkout origin/release-v1.0.1
 curl -L https://raw.githubusercontent.com/xikimay/nodejs-pool/master/deployment/ub_daemon.patch | sudo git apply -v
 sudo rm -rf build
 sudo make -j$(nproc)
