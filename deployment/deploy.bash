@@ -26,7 +26,7 @@ sudo systemctl enable ntp
 cd /usr/local/src
 sudo git clone https://github.com/UnitedBitcoin/UnitedBitcoin.git
 cd UnitedBitcoin
-sudo git checkout
+sudo git checkout v1.0.2
 curl https://raw.githubusercontent.com/xikimay/nodejs-pool/master/deployment/ub_daemon.patch | sudo git apply -v
 sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils python3
 
